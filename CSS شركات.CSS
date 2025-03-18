@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0f587d;
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 24px;
+    font-style: italic; /* جعل النص مائل */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.search-bar button,
+.small-button {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    text-align: right;
+}
+
+nav {
+    margin: 20px 0;
+    text-align: center; /* تعديل محاذاة النص إلى المركز */
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    display: inline-block; /* جعل الروابط كتلة داخلية لتسهيل المركز */
+}
+
+.product-card,
+.form-section {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.product-details {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-align: right;
+}
+
+.type-card {
+    margin-top: 10px;
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    text-align: right;
+}
+
+.type-card img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.type-card div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-section label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: right;
+}
+
+.form-section input,
+.form-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0f587d;
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .type-card {
+        flex-direction: column;
+    }
+
+    .type-card img {
+        max-width: 100%;
+    }
+}
